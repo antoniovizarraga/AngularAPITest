@@ -17,5 +17,10 @@ export class PersonasService {
 
   http = inject(HttpClient);
 
-  listado
+  servicioGetPersonas(): Observable<Persona[]> {
+    return this.http.get<Persona[]>(this.urlWebAPI);
+  }
+
+  // EL resto de verbos es parecido al del get
+
 }
