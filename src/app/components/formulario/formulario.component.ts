@@ -5,10 +5,12 @@ import {MatSnackBar} from '@angular/material/snack-bar';
 import { PersonasService } from '../../services/personas.service';
 import { Persona } from '../../interfaces/persona';
 import { NgFor, CommonModule } from '@angular/common';
+import {MatTableModule} from '@angular/material/table';
+
 
 @Component({
   selector: 'app-formulario',
-  imports: [MatButtonModule, MatIconModule, NgFor, CommonModule],
+  imports: [MatButtonModule, MatIconModule, NgFor, CommonModule, MatTableModule],
   templateUrl: './formulario.component.html',
   styleUrl: './formulario.component.scss'
 })
